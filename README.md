@@ -1,2 +1,2 @@
 # unCaptcha
-an anti-surveilance typeface unreadable to computer vision and AI
+Protect your privacy with this anti-surveilance typeface - invisible to computer vision and AI.
