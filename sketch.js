@@ -9,10 +9,10 @@ let eyerX = 0;
 let eyerY = 0;
  
 function setup() {
-  //createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth,windowHeight);
   video = createCapture(VIDEO);
  video.size(windowWidth,windowHeight);
-  //video.hide();
+  video.hide();
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', gotPoses);
 }
@@ -44,7 +44,7 @@ function draw() {
   //image(video, 0, 0, width, img.height*width/img.width);
  
  //imageMode(CORNER); 
- //image(video, 0, 0, windowWidth,windowHeight);
+ image(video, 0, 0, windowWidth,windowHeight);
   
   //let d = dist(noseX, noseY, eyelX, eyelY);
 
