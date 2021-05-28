@@ -39,8 +39,12 @@ function modelReady() {
 }
 
 function draw() {
- imageMode(CORNER); 
- image(video, 0, 0, windowWidth,windowHeight);
+ var scale = 0.8;
+  imageMode(CENTER);
+  image(video, 0.5*width, 0.5*height, scale*width, scale*img.height*width/img.width); // to fit width
+ 
+ //imageMode(CORNER); 
+ //image(video, 0, 0, windowWidth,windowHeight);
   
   //let d = dist(noseX, noseY, eyelX, eyelY);
 
