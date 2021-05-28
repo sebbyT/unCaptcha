@@ -11,8 +11,8 @@ let eyerY = 0;
 function setup() {
   createCanvas(windowWidth,windowHeight);
   video = createCapture(VIDEO);
- video.size(3840,2160);
-  video.hide();
+ video.size(windowWidth,windowHeight);
+  //video.hide();
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', gotPoses);
 }
@@ -40,8 +40,8 @@ function modelReady() {
 }
 
 function draw() {
- imageMode(CORNER);
-  image(video, 0, 0, width, img.height*width/img.width);
+ //imageMode(CORNER);
+  //image(video, 0, 0, width, img.height*width/img.width);
  
  //imageMode(CORNER); 
  //image(video, 0, 0, windowWidth,windowHeight);
