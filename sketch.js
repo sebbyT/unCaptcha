@@ -9,7 +9,7 @@ let eyerX = 0;
 let eyerY = 0;
  
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(windowWidth,windowHeight);
   video = createCapture(VIDEO);
   video.hide();
   poseNet = ml5.poseNet(video, modelReady);
@@ -41,12 +41,12 @@ function modelReady() {
 function draw() {
   image(video, 0, 0, windowWidth,windowHeight);
   
-  let d = dist(noseX, noseY, eyelX, eyelY);
+  //let d = dist(noseX, noseY, eyelX, eyelY);
 
   
-  rect(eyelX-70, eyelY, 50,50);
-  rect(eyerX-60, eyerY, 50,50);
-  rect(noseX-55, noseY+10, 30,30);
+  rect(eyelX, eyelY, 50,50);
+  rect(eyerX, eyerY, 50,50);
+  rect(noseX, noseY+10, 30,30);
   noFill();
   stroke(159,0,0);
 
