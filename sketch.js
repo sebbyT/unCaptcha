@@ -39,7 +39,8 @@ function modelReady() {
 }
 
 function draw() {
-  image(video, 0, 0, windowWidth,windowHeight);
+ imageMode(CORNER); 
+ image(video, 0, 0, windowWidth,windowHeight);
   
   //let d = dist(noseX, noseY, eyelX, eyelY);
 
