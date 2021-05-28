@@ -11,6 +11,7 @@ let eyerY = 0;
 function setup() {
   createCanvas(windowWidth,windowHeight);
   video = createCapture(VIDEO);
+ video.size(1920,1080);
   video.hide();
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', gotPoses);
