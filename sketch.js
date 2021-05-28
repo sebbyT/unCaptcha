@@ -9,7 +9,7 @@ let eyerX = 0;
 let eyerY = 0;
  
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  //createCanvas(windowWidth,windowHeight);
   video = createCapture(VIDEO);
  video.size(windowWidth,windowHeight);
   //video.hide();
