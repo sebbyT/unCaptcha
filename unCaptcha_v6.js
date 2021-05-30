@@ -76,7 +76,7 @@ pop();
 
 // text placeholder demo "cctv"
 push();imageMode(CENTER);
-image(pic, windowWidth*.5,windowHeight*.5);
+image(pic, windowWidth*.25,windowHeight*.25);
 pop();
 }
 }
