@@ -69,8 +69,8 @@ scale(-1,1); // seb's code
 scale(-1,1);
     noFill();
    stroke(230,0,0);
-    rect(leftEye.x,leftEye.y,40,40);
-    rect(rightEye.x,rightEye.y,40,40);
+    rect(leftEye.x+30,leftEye.y,30,30);
+    rect(rightEye.x+30,rightEye.y,30,30);
     noFill(0);
     pop();
     
