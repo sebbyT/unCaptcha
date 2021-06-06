@@ -69,8 +69,8 @@ scale(-1,1); // seb's code
 scale(-1,1);
     noFill();
    stroke(230,0,0);
-    rect(leftEye.x+180,leftEye.y+60,60,60);
-    rect(rightEye.x+200,rightEye.y+60,60,60);
+    rect(leftEye.x+160,leftEye.y+60,60,60);
+    rect(rightEye.x+180,rightEye.y+60,60,60);
     noFill(0);
     pop();
     
@@ -87,7 +87,7 @@ scale(-1,1);
 pop();  
 
 push(); //seb's code push to pop - smile u r on cctv text
-  textSize(140);
+  textSize(130);
   textAlign(CENTER);
   fill(230,0,0);
   textFont(uncaptchaSmile);
