@@ -68,7 +68,7 @@ scale(-1,1); // seb's code
     translate(width,0); //invert image left to right
 scale(-1,1);
     noFill();
-   stroke(250,0,0);
+   stroke(230,0,0);
     rect(leftEye.x+180,leftEye.y+60,60,60);
     rect(rightEye.x+200,rightEye.y+60,60,60);
     noFill(0);
@@ -79,7 +79,7 @@ scale(-1,1);
     translate(width,0);
     scale(-1,1);
     textSize(12);
-    fill(250,0,0);
+    fill(230,0,0);
     text("face recognition: matched",leftEye.x+225,leftEye.y+45);
     text("user#: 2761736A",leftEye.x+225,leftEye.y+60);
     text("location: 37.8136° s, 144.9631° e",leftEye.x+225,leftEye.y+75);
@@ -89,7 +89,7 @@ pop();
 push(); //seb's code push to pop - smile u r on cctv text
   textSize(140);
   textAlign(CENTER);
-  fill(255,0,0);
+  fill(230,0,0);
   textFont(uncaptchaSmile);
   text("SMILE", windowWidth/2,windowHeight*.35);
   text("YOU ARE", windowWidth/2,windowHeight*.54);
